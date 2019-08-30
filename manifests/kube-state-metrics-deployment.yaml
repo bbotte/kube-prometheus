@@ -93,8 +93,8 @@ spec:
           requests:
             cpu: 10m
             memory: 30Mi
-      nodeSelector:
-        kubernetes.io/os: linux
+     # nodeSelector:
+     #   kubernetes.io/os: linux
       securityContext:
         runAsNonRoot: true
         runAsUser: 65534

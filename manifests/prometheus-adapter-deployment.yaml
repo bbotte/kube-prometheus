@@ -39,8 +39,8 @@ spec:
         - mountPath: /etc/adapter
           name: config
           readOnly: false
-      nodeSelector:
-        kubernetes.io/os: linux
+      #nodeSelector:
+      #  kubernetes.io/os: linux
       serviceAccountName: prometheus-adapter
       volumes:
       - emptyDir: {}

@@ -7,8 +7,8 @@ metadata:
   namespace: monitoring
 spec:
   baseImage: quay.io/prometheus/alertmanager
-  nodeSelector:
-    kubernetes.io/os: linux
+  #nodeSelector:
+  #  kubernetes.io/os: linux
   replicas: 3
   securityContext:
     fsGroup: 2000

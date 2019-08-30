@@ -12,8 +12,8 @@ spec:
       namespace: monitoring
       port: web
   baseImage: quay.io/prometheus/prometheus
-  nodeSelector:
-    kubernetes.io/os: linux
+  #nodeSelector:
+  #  kubernetes.io/os: linux
   podMonitorSelector: {}
   replicas: 2
   resources:
