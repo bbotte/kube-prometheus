@@ -42,10 +42,12 @@ prometheusrules.monitoring.coreos.com   2019-08-29T08:25:30Z
 servicemonitors.monitoring.coreos.com   2019-08-29T08:25:30Z
 ```
 
-因为没有对node节点打标签，所以注释
-    vim  0prometheus-operator-deployment.yaml prometheus-adapter-deployment.yaml  kube-state-metrics-deployment.yaml prometheus-prometheus.yaml
+因为没有对node节点打标签，所以注释,编辑下面文件，注释nodeSelector 和 kubernetes.io/os: linux 两行
+```
+    0prometheus-operator-deployment.yaml prometheus-adapter-deployment.yaml  kube-state-metrics-deployment.yaml prometheus-prometheus.yaml
           #nodeSelector:
           #  kubernetes.io/os: linux
+```
 
 ```
 for i in prometheus-adapter*;do kubectl apply -f $i;done
