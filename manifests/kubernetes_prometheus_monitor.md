@@ -13,6 +13,9 @@ quay.io/prometheus/prometheus:v2.11.0
 quay.io/prometheus/alertmanager:v0.18.0
 ```
 
+上述docker包
+链接: https://pan.baidu.com/s/14u57BygNMoJYqE7L5urfng 提取码: khun
+
 ```
 for i in *.tar;do docker load < $i;done
 ```
